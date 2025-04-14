@@ -27,17 +27,15 @@
                 <h5 class="card-header drag_area title">Standard Elements</h5>
                     <!-- here is the list of all the draggable components-->
                     <!-- Content here -->
-                    <div class="card-body">
-                        <ul style="list-style: none;" class="ul_element_container">
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h1" draggable="true" value="h1" data-container="Heading 1" type="button">H1</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h2" draggable="true" value="h2" data-container="Heading 2" type="button">H2</button></div></li>        
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h3" draggable="true" value="h3" data-container="Heading 3" type="button">H3</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h4" draggable="true" value="h4" data-container="Heading 4" type="button">H4</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h5" draggable="true" value="h5" data-container="Heading 5" type="button">H5</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="h6" draggable="true" value="h6" data-container="Heading 6" type="button">H6</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="p" draggable="true" value="p" data-container="Paragraph">P</button></div></li>
-                            <li><div><button class="draggable btn btn-primary btn-lg" id="anchor" draggable="true" value="a" data-container="link">Link</button></div></li>
-                        </ul>
+                    <div class="card-body ul_element_container">
+                        <button class="draggable btn btn-primary btn-lg" id="h1" draggable="true" value="h1" data-container="Heading 1" type="button">H1</button>
+                        <button class="draggable btn btn-primary btn-lg" id="h2" draggable="true" value="h2" data-container="Heading 2" type="button">H2</button>        
+                        <button class="draggable btn btn-primary btn-lg" id="h3" draggable="true" value="h3" data-container="Heading 3" type="button">H3</button>
+                        <button class="draggable btn btn-primary btn-lg" id="h4" draggable="true" value="h4" data-container="Heading 4" type="button">H4</button>
+                        <button class="draggable btn btn-primary btn-lg" id="h5" draggable="true" value="h5" data-container="Heading 5" type="button">H5</button>
+                        <button class="draggable btn btn-primary btn-lg" id="h6" draggable="true" value="h6" data-container="Heading 6" type="button">H6</button>
+                        <button class="draggable btn btn-primary btn-lg" id="p" draggable="true" value="p" data-container="Paragraph">P</button>
+                        <button class="draggable btn btn-primary btn-lg" id="anchor" draggable="true" value="a" data-container="link">Link</button>
                     </div>
                 </div>
             </div>        
@@ -62,7 +60,8 @@
                 <div class="card" id="layout_selector">
                 <h5 class="card-header drag_area title">Layout Selector</h5>
                     <div class="card-body">
-                        <ul style="list-style: none;">
+                        <ul style="list-style: none;" class="ul_element_container">
+                            <button class="draggable btn btn-primary btn-lg" id="layout1" draggable="true" value="div" data-container="Section" type="button">Layout 1</button>
                             <li><div><button>Layout 1</button></div></li>
                             <li><div><button>Layout 2</button></div></li>        
                             <li><div><button>Layout 3</button></div></li>
@@ -88,6 +87,22 @@
         <!--<div id="element_propery" class="element_propery" draggable="true">-->
             <h5 class="card-header">Element Property</h5>
             <div class="card-body">
+                <form>
+                    <div class="form-group">
+                      <label for="InnerText">Inner Text</label>
+                      <input type="text" class="form-control" id="InnerText" aria-describedby="emailHelp" placeholder="Heading 1">
+                      <small id="InnerTextHelp" class="form-text text-muted">Input the text you want to display in H1</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                 <ul style="list-style: none;">
                     <li><div><button>Property 1</button></div></li>
                     <li><div><button>Property 2</button></div></li>        
