@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Builder</title>
+    <link rel="icon" href="https://images.pexels.com/users/avatars/44775/lum3n-com-224.jpeg?auto=compress&fit=crop&h=50&w=50&dpr=2">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="baseHtmlComponents.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <nav>
+            <label for="font">Font Url</label>
+            <input type="url" name="font">
+        </nav>
+    </div>
+
+    <!--the mother of all nuances and divs starts here-->
+    
+    <div id="main_div_container" class="main_div_container"> 
+        <!-- here is the list of all the draggable components-->
+            <!-- Content here -->
+            <div class="div_element_container">
+                <ul style="list-style: none;" class="ul_element_container">
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h1" draggable="true" value="h1" data-container="Heading 1" type="button">H1</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h2" draggable="true" value="h2" data-container="Heading 2" type="button">H2</button></div></li>        
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h3" draggable="true" value="h3" data-container="Heading 3" type="button">H3</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h4" draggable="true" value="h4" data-container="Heading 4" type="button">H4</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h5" draggable="true" value="h5" data-container="Heading 5" type="button">H5</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="h6" draggable="true" value="h6" data-container="Heading 6" type="button">H6</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="p" draggable="true" value="p" data-container="Paragraph">P</button></div></li>
+                    <li><div><button class="draggable btn btn-primary btn-lg" id="anchor" draggable="true" value="a" data-container="link">Link</button></div></li>
+                </ul>
+            </div>
+
+        <!-- this is the canvas in which the component is viewed-->
+            <div id="drag_area" class="drag_area" >
+                <h1 class="drag_area title">Canvas</h1>
+                <div id="canvas_area" class="canvas_area " style="border: 1px solid black;">
+                    <h1 class="draggable inside_canvas" id="default" draggable="true">Heading 1</h1>
+                </div>
+            </div>
+
+        <!-- this is the code for when you click on an element-->
+        <div id="element_propery" class="element_propery" draggable="true">
+            <h1>Element Property</h1>
+                <ul style="list-style: none;">
+                    <li><div><button>Property 1</button></div></li>
+                    <li><div><button>Property 2</button></div></li>        
+                    <li><div><button>Property 3</button></div></li>
+                    <li><div><button>Property 4</button></div></li>
+                    <li><div><button>Property 5</button></div></li>
+                    <li><div><button>Property 6</button></div></li>
+                    <li><div><button>Property 7</button></div></li>
+                    <li><div><button>Property 8</button></div></li>
+                </ul>
+        </div>
+
+        <!-- this is the code for the layout selector area-->
+        <div id="layout_selector">
+            <h1>Layout Selector</h1>
+                <ul style="list-style: none;">
+                    <li><div><button>Layout 1</button></div></li>
+                    <li><div><button>Layout 2</button></div></li>        
+                    <li><div><button>Layout 3</button></div></li>
+                    <li><div><button>Layout 4</button></div></li>
+                    <li><div><button>Layout 5</button></div></li>
+                    <li><div><button>Layout 6</button></div></li>
+                    <li><div><button>Layout 7</button></div></li>
+                    <li><div><button>Layout 8</button></div></li>
+                </ul>
+        </div>
+    </div>
+
+    <!-- this is the live code editor-->
+    <div style="background-color: rgb(40, 44, 52);">
+        <code>
+            <p style="color: rgb(171, 178, 191);"
+            id="code">This is the code area</p>
+        </code>
+    </div>
+</body>
+</html>
